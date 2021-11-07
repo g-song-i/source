@@ -4,7 +4,7 @@
 set -m
   
 # Start the primary process and put it in the background
-/usr/bin/falco &
+/usr/bin/falco -o time_format_iso_8601=true &
   
 # Start the helper process
 /usr/bin/falco-exporter
